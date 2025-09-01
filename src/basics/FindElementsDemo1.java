@@ -1,9 +1,13 @@
+package basics;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LoginDemo3 {
+import java.util.List;
+
+public class FindElementsDemo1 {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -11,18 +15,12 @@ public class LoginDemo3 {
         driver.manage().window().maximize();
         driver.get("https://stock.scriptinglogic.in/");
 
-        WebElement txtUsername = driver.findElement(By.tagName("input"));
-        txtUsername.sendKeys("admin");
+        List<WebElement> wbList = driver.findElements(By.xpath("//input"));
 
-        WebElement txtPassword = driver.findElement(By.id("login-password"));
-        txtPassword.sendKeys("admin");
+        System.out.println(wbList.size());
 
-        WebElement btnLogin = driver.findElement(By.name("submit"));
-        btnLogin.click();
-
-
-
-
-
+        wbList.get(0).sendKeys("admin");
+        wbList.get(1).sendKeys("admin");
+        wbList.get(2).click();
     }
-}
+    }
