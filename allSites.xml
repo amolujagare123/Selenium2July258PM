@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="WebsiteSuite">
+
+    <!-- First group of tests -->
+    <test name="Social and AI Sites">
+        <classes>
+            <class name="TestNGDemo.DemoReal.SocialSites"/>
+            <class name="TestNGDemo.DemoReal.AISites"/>
+        </classes>
+    </test>
+
+    <!-- Second group of tests -->
+    <test name="Job and Tutorial Sites">
+        <classes>
+            <class name="TestNGDemo.DemoReal.JobSites"/>
+            <class name="TestNGDemo.DemoReal.TutorialSites"/>
+        </classes>
+    </test>
+
+</suite>
