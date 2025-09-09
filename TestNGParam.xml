@@ -1,0 +1,21 @@
+<suite name ="Project Name">
+
+    <parameter name="url" value="http://amolujagare.com"/>
+    <parameter name="username" value="scriptinglogic"/>
+    <parameter name="password" value="au1234"/>
+
+
+    <test name ="Test 1">
+        <classes>
+            <class name = "TestNGDemo.paramDemo.ClassOne"/>
+            <class name = "TestNGDemo.paramDemo.ClassTwo"/>
+        </classes>
+    </test>
+
+    <test name ="Test 2">
+        <classes>
+            <class name = "TestNGDemo.paramDemo.ClassThree"/>
+        </classes>
+    </test>
+
+</suite>

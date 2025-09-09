@@ -1,0 +1,22 @@
+<suite name ="Project Name">
+
+    <groups>
+        <run>
+            <include name="email"/>
+        </run>
+    </groups>
+
+    <test name ="Test 1">
+        <classes>
+            <class name = "TestNGDemo.Demo3.ClassOne"/>
+            <class name = "TestNGDemo.Demo3.ClassTwo"/>
+        </classes>
+    </test>
+
+    <test name ="Test 2">
+        <classes>
+            <class name = "TestNGDemo.Demo3.ClassThree"/>
+        </classes>
+    </test>
+
+</suite>
