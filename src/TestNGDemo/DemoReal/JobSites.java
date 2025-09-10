@@ -1,7 +1,9 @@
 package TestNGDemo.DemoReal;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -25,6 +27,9 @@ public class JobSites {
     @Test
     public void naukri() {
         driver.get("https://www.naukri.com/");
+        Assert.assertEquals(driver.getTitle(),
+                "Naukri site"
+        ,"This is not a naukri site");
     }
 
     @Test
