@@ -2,7 +2,7 @@
 <suite name="WebsiteSuite">
 
     <listeners>
-        <listener class-name="org.testng.reporters.EmailableReporter2"/>
+        <listener class-name="ExtentReports.MyReports.MyExtentReportsListeners"/>
     </listeners>
 
     <!-- First group of tests -->

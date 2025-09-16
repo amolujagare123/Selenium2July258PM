@@ -1,0 +1,20 @@
+<suite name ="Project Name">
+
+    <listeners>
+        <listener class-name="ExtentReports.MyReports.MyListeners"/>
+    </listeners>
+
+    <test name ="Test 1">
+        <classes>
+            <class name = "TestNGDemo.Demo2.ClassOne"/>
+            <class name = "TestNGDemo.Demo2.ClassTwo"/>
+        </classes>
+    </test>
+
+    <test name ="Test 2">
+        <classes>
+            <class name = "TestNGDemo.Demo2.ClassThree"/>
+        </classes>
+    </test>
+
+</suite>

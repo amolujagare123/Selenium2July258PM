@@ -1,5 +1,6 @@
 package TestNGDemo.Demo2;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class ClassTwo {
@@ -10,10 +11,11 @@ public class ClassTwo {
         System.out.println("classTwoTest1");
     }
 
-    @Test (enabled = false)
+    @Test// (enabled = false)
     public void classTwoTest2()
     {
         System.out.println("classTwoTest2");
+        Assert.assertEquals(true,false,"This test is failed");
     }
 
     @Test
